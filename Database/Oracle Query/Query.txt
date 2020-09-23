@@ -1,0 +1,5 @@
+CREATE TABLE mybooks(
+ book_id NUMBER(4),
+ book_name VARCHAR2(20),
+ book_price NUMBER(5,2),
+ subject VARCHAR2(20));

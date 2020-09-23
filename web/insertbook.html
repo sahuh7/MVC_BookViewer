@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Insert Book</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                font-size: 120%;
+                font-family: Comic Sans MS;
+            }
+            tr{
+                padding: 25;
+            }
+            th{
+                text-align: right;                
+            }
+            td,th{
+                padding: 10px;
+                height: 10px;                
+            }
+            input{
+                width: 135%;
+                height: 135%;
+                font-family: Comic Sans MS;
+            }
+            input[type="submit"]{
+                margin-top: 5%;
+                width: 100%;
+                height: 250%
+            }
+            #myform{
+                align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="myform">
+            <form action="MyBooksInsertController">
+                <table>
+                    <tr>
+                        <th>Book ID : </th>
+                        <td><input type="text" name="bookID" value="" required/></td>
+                    </tr>
+                    <tr>
+                        <th>Book Name : </th>
+                        <td><input type="text" name="bookName" value="" required/></td>
+                    </tr>
+                    <tr>
+                        <th>Book Price : </th>
+                        <td><input type="text" name="bookPrice" value="" required/></td>
+                    </tr>
+                    <tr>
+                        <th>Book Subject : </th>
+                        <td><input type="text" name="bookSubject" value="" required/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="Insert" /></td>
+                    </tr>
+                </table>
+            </form>
+        
+        </div>
+        <h3><a href="index.html">Home</a></h3>
+    </body>
+</html>
