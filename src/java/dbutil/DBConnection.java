@@ -19,8 +19,8 @@ public class DBConnection {
         try {
             Class.forName("oracle.jdbc.OracleDriver");
             String connectionString = "jdbc:oracle:thin:@localhost:1521:XE";
-            String username = "sca";
-            String password = "sca";
+            String username = "user";
+            String password = "password";
             conn = DriverManager.getConnection(connectionString,username,password);
         } catch (ClassNotFoundException ex) {
             System.out.println("Cannot load the driver");
